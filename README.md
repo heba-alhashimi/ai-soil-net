@@ -3,7 +3,7 @@
 [![PyPI version](https://img.shields.io/pypi/v/ai-soil-net.svg)](https://pypi.org/project/ai-soil-net/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24439875.svg)](https://doi.org/10.5281/zenodo.24439875)
 **AI-Soil Net** is a cloud-native, open-source Python library built on the **Google Earth Engine (GEE)** Python API for automated **Digital Soil Mapping (DSM)** using multi-sensor Optical-SAR fusion (Landsat 8 + Sentinel-1), automated NDVI/NDWI Dual-Masking, and Spatial Transfer Learning.
 
 ## Key Features
