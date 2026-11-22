@@ -15,7 +15,7 @@ class SoilDataFetcher:
         self.end_date = end_date
 
     def _apply_l8_scale_factors(self, image):
-        optical_bands = image.select('SR_B.').multiply(0.0000275).add(-0.2)
+        optical_bands = image.select('SR_B.').multiply(0.0000275).add(-0.2).clamp(0, 1)
         thermal_bands = image.select('ST_B.*').multiply(0.00341802).add(149.0)
         return image.addBands(optical_bands, None, True).addBands(thermal_bands, None, True)
 
@@ -40,7 +40,8 @@ class SoilDataFetcher:
             .filter(ee.Filter.listContains('transmitterReceiverPolarisation', 'VH')) \
             .filter(ee.Filter.eq('instrumentMode', 'IW'))
         med = s1.select(['VV', 'VH']).median().clip(self.roi)
-        return med.addBands(med.select('VV').divide(med.select('VH')).rename('VV_VH_ratio'))
+        # In dB scale, polarization ratio (VV/VH) is computed via subtraction (VV - VH)
+        return med.addBands(med.select('VV').subtract(med.select('VH')).rename('VV_VH_ratio'))
 
     def fetch_hydrological_context(self):
         logger.info("Fetching JRC Hydrological Context...")
