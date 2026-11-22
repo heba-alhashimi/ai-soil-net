@@ -23,7 +23,8 @@ class SoilIndicesCalculator:
 
     @staticmethod
     def calculate_radar_indices(sar_image):
-        logger.info("Calculating Structural Radar Indices...")
-        vv, vh = sar_image.select('VV'), sar_image.select('VH')
-        rvi = sar_image.expression('(4 * VH) / (VV + VH)', {'VV': vv, 'VH': vh}).rename('RVI')
+        logger.info("Calculating Structural Radar Indices (Linear Power Conversion)...")
+        vv_lin = ee.Image(10).pow(sar_image.select('VV').divide(10))
+        vh_lin = ee.Image(10).pow(sar_image.select('VH').divide(10))
+        rvi = vh_lin.multiply(4).divide(vv_lin.add(vh_lin)).rename('RVI')
         return sar_image.addBands(rvi)
