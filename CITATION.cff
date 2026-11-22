@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use AI-Soil Net in your research, please cite it using the metadata below."
+title: "AI-Soil Net: A Cloud-Native Open-Source Python Library for Automated Digital Soil Mapping on Google Earth Engine"
+version: "1.0.0"
+doi: 10.5281/zenodo.24439875
+date-released: 2026-11-22
+url: "https://github.com/heba-alhashimi/ai-soil-net"
+repository-code: "https://github.com/heba-alhashimi/ai-soil-net"
+license: MIT
+authors:
+  - family-names: "Al-Hashimi"
+    given-names: "Heba"
+    affiliation: "University of Basrah"
+    email: "pgs.heba.abdulhakeem@uobasrah.edu.iq"
+keywords:
+  - "Digital Soil Mapping"
+  - "Google Earth Engine"
+  - "Optical-SAR Fusion"
+  - "Dual-Masking"
+  - "Spatial Transfer Learning"
+  - "Python"
