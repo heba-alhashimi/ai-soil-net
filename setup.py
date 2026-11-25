@@ -21,7 +21,7 @@ setup(
         "Homepage": "https://github.com/heba-alhashimi/ai-soil-net",
         "Documentation": "https://github.com/heba-alhashimi/ai-soil-net/tree/main/docs",
         "Bug Tracker": "https://github.com/heba-alhashimi/ai-soil-net/issues",
-        "Zenodo DOI": "https://doi.org/10.5281/zenodo.24439875",
+        "Zenodo DOI": "https://doi.org/10.5281/zenodo.24525683",
     },
     license="MIT",
     packages=find_packages(),
