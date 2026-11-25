@@ -3,13 +3,13 @@ message: "If you use AI-Soil Net in your research, please cite it using the meta
 title: "AI-Soil Net: A Cloud-Native Open-Source Python Framework for Automated Digital Soil Mapping Using Multi-Sensor Optical-SAR Fusion, Dual-Masking, and Spatial Transfer Learning"
 version: "1.1.0"
 date-released: "2026-11-25"
-doi: "10.5281/zenodo.24439875"
+doi: "10.5281/zenodo.24525683"
 url: "https://github.com/heba-alhashimi/ai-soil-net"
 repository-code: "https://github.com/heba-alhashimi/ai-soil-net"
 license: "MIT"
 authors:
   - family-names: "Al-Hashimi"
-    given-names: "Heba Abdel Hakim"
+    given-names: "Heba"
     affiliation: "University of Basrah, College of Education for Human Sciences, Department of Geography"
     email: "pgs.heba.abdulhakeem@uobasrah.edu.iq"
 keywords:
