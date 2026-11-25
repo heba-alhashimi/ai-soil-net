@@ -44,4 +44,4 @@ cartography = ["rasterio", "cartopy", "numpy"]
 Homepage = "https://github.com/heba-alhashimi/ai-soil-net"
 Documentation = "https://github.com/heba-alhashimi/ai-soil-net/tree/main/docs"
 "Bug Tracker" = "https://github.com/heba-alhashimi/ai-soil-net/issues"
-Zenodo = "https://doi.org/10.5281/zenodo.24439875"
+Zenodo = "https://doi.org/10.5281/zenodo.24525683"
