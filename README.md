@@ -3,7 +3,7 @@
 [![PyPI version](https://img.shields.io/pypi/v/ai-soil-net.svg)](https://pypi.org/project/ai-soil-net/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24439875.svg)](https://doi.org/10.5281/zenodo.24439875)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24525683.svg)](https://doi.org/10.5281/zenodo.24525683)
 
 **AI-Soil Net** is a cloud-native, open-source Python library built on the **Google Earth Engine (GEE)** Python API for automated **Digital Soil Mapping (DSM)** using multi-sensor Optical–SAR fusion (Landsat 8 + Sentinel-1), automated NDVI/NDWI Dual-Masking, Spatial Transfer Learning, and publication-grade (600 DPI) cartography.
 
@@ -69,4 +69,4 @@ Complete step-by-step manuals with reproducible code snippets and the system arc
 
 ## Citation
 If you use **AI-Soil Net** in your research, please cite:
-> Al-Hashimi, H. (2026). *AI-Soil Net (v1.1.0): A Cloud-Native Open-Source Python Framework for Automated Digital Soil Mapping Using Multi-Sensor Optical-SAR Fusion, Dual-Masking, and Spatial Transfer Learning*. Zenodo: [https://doi.org/10.5281/zenodo.24439875](https://doi.org/10.5281/zenodo.24439875) | PyPI: [https://pypi.org/project/ai-soil-net/](https://pypi.org/project/ai-soil-net/) | GitHub: [https://github.com/heba-alhashimi/ai-soil-net](https://github.com/heba-alhashimi/ai-soil-net)
+> Al-Hashimi, H. (2026). *AI-Soil Net (v1.1.0): A Cloud-Native Open-Source Python Framework for Automated Digital Soil Mapping Using Multi-Sensor Optical–SAR Fusion, Dual-Masking, and Spatial Transfer Learning*. Zenodo: https://doi.org/10.5281/zenodo.24525683 | PyPI: https://pypi.org/project/ai-soil-net/ | GitHub: https://github.com/heba-alhashimi/ai-soil-net
