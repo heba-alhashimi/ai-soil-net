@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-soil-net"
+version = "1.1.0"
+description = "Cloud-native Python library for automated Digital Soil Mapping on Google Earth Engine using Optical-SAR fusion, Spatial Transfer Learning, and 600-DPI publication-grade cartography."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+authors = [
+    { name = "Dr. Heba Abdel Hakim Al-Hashimi", email = "pgs.heba.abdulhakeem@uobasrah.edu.iq" }
+]
+keywords = [
+    "digital-soil-mapping",
+    "google-earth-engine",
+    "remote-sensing",
+    "optical-sar-fusion",
+    "transfer-learning",
+    "cartography",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: GIS",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "earthengine-api",
+    "geemap",
+    "pandas",
+    "matplotlib",
+    "seaborn",
+]
+
+[project.optional-dependencies]
+cartography = ["rasterio", "cartopy", "numpy"]
+
+[project.urls]
+Homepage = "https://github.com/heba-alhashimi/ai-soil-net"
+Documentation = "https://github.com/heba-alhashimi/ai-soil-net/tree/main/docs"
+"Bug Tracker" = "https://github.com/heba-alhashimi/ai-soil-net/issues"
+Zenodo = "https://doi.org/10.5281/zenodo.24439875"

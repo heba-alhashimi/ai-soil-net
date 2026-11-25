@@ -1,0 +1,7 @@
+include README.md
+include LICENSE
+include CHANGELOG.md
+include CITATION.cff
+include Imperial_EcoHydro_Master.csv
+include usage_example.py
+recursive-include docs *.pdf *.jpg *.png *.md

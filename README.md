@@ -1,4 +1,4 @@
-# AI-Soil Net (v1.0.0)
+# AI-Soil Net (v1.1.0)
 
 [![PyPI version](https://img.shields.io/pypi/v/ai-soil-net.svg)](https://pypi.org/project/ai-soil-net/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
@@ -17,16 +17,15 @@
 
 ## Installation
 
-### Official Stable Release (PyPI)
+### Standard Installation (PyPI)
 ```bash
-pip install ai-soil-net==1.0.0
+pip install ai-soil-net==1.1.0
 ```
 
-### Latest Main Branch (Including 600-DPI Cartography Tools)
-To access the latest automated cartography methods (`plot_single_index`, `plot_multi_sensor_panels`, and `plot_soil_quality_map`) directly from the `main` branch prior to the next PyPI release, install from GitHub along with `rasterio` and `cartopy`:
+### Full Installation (Including 600-DPI Cartography Tools)
+To include `rasterio` and `cartopy` for automated 600-DPI journal-ready mapping (`plot_single_index`, `plot_multi_sensor_panels`, and `plot_soil_quality_map`):
 ```bash
-pip install git+https://github.com/heba-alhashimi/ai-soil-net.git
-pip install rasterio cartopy
+pip install "ai-soil-net[cartography]==1.1.0"
 ```
 
 ## Publication-Grade Cartography (600 DPI)
@@ -66,8 +65,8 @@ SoilVisualizer.plot_soil_quality_map(
 To support full workflow reproducibility, this repository includes **`Imperial_EcoHydro_Master.csv`** (`n = 134` georeferenced samples with GEE-compatible `.geo` geometry). Researchers can upload this file directly as a Google Earth Engine Table Asset to replicate the Spatial Transfer Learning workflow.
 
 ## Documentation & User Guides
-Complete step-by-step manuals with reproducible code snippets are available inside the [`docs/`](docs/) folder.
+Complete step-by-step manuals with reproducible code snippets and the system architecture diagram are available inside the [`docs/`](docs/) folder.
 
 ## Citation
 If you use **AI-Soil Net** in your research, please cite:
-> Al-Hashimi, H. (2026). *AI-Soil Net (v1.0.0): A Cloud-Native Open-Source Python Framework for Automated Digital Soil Mapping Using Multi-Sensor Optical-SAR Fusion, Dual-Masking, and Spatial Transfer Learning*. Zenodo: [https://doi.org/10.5281/zenodo.24439875](https://doi.org/10.5281/zenodo.24439875) | PyPI: [https://pypi.org/project/ai-soil-net/](https://pypi.org/project/ai-soil-net/) | GitHub: [https://github.com/heba-alhashimi/ai-soil-net](https://github.com/heba-alhashimi/ai-soil-net)
+> Al-Hashimi, H. (2026). *AI-Soil Net (v1.1.0): A Cloud-Native Open-Source Python Framework for Automated Digital Soil Mapping Using Multi-Sensor Optical-SAR Fusion, Dual-Masking, and Spatial Transfer Learning*. Zenodo: [https://doi.org/10.5281/zenodo.24439875](https://doi.org/10.5281/zenodo.24439875) | PyPI: [https://pypi.org/project/ai-soil-net/](https://pypi.org/project/ai-soil-net/) | GitHub: [https://github.com/heba-alhashimi/ai-soil-net](https://github.com/heba-alhashimi/ai-soil-net)
